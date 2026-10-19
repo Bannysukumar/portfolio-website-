@@ -18,6 +18,7 @@ export function Hero() {
       timeline
         .from(".hero__kicker", { y: 18, opacity: 0, duration: 0.6 })
         .from(".hero__line > span", { yPercent: 110, duration: 0.9, stagger: 0.12 }, "-=0.25")
+        .from(".hero__accent", { opacity: 0.15, duration: 1.2 }, "<0.15")
         .from(".hero__summary", { y: 20, opacity: 0, duration: 0.7 }, "-=0.5")
         .from(".hero__cta > *", { y: 16, opacity: 0, duration: 0.55, stagger: 0.09 }, "-=0.4")
         .from(".hero__diagram", { y: 28, opacity: 0, duration: 0.9 }, "-=0.85")

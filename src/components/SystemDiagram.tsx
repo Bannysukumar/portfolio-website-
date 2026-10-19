@@ -17,8 +17,8 @@ export function SystemDiagram() {
       >
         <defs>
           <linearGradient id="lineFade" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#f0a24b" stopOpacity="0.7" />
-            <stop offset="1" stopColor="#f0a24b" stopOpacity="0.15" />
+            <stop offset="0" stopColor="#ff9b45" stopOpacity="0.7" />
+            <stop offset="1" stopColor="#ff9b45" stopOpacity="0.15" />
           </linearGradient>
         </defs>
 
@@ -28,10 +28,10 @@ export function SystemDiagram() {
         <path id="diag-path-3" d="M120 360 L340 360" stroke="#f2efe9" strokeOpacity="0.12" strokeWidth="1.5" fill="none" />
 
         {/* travelling signals */}
-        <circle r="3.5" fill="#ffb964" className="diagram__signal diagram__signal--1">
+        <circle r="3.5" fill="#ffb36b" className="diagram__signal diagram__signal--1">
           <animateMotion dur="2.6s" repeatCount="indefinite" path="M230 108 L230 172" />
         </circle>
-        <circle r="3.5" fill="#ffb964" className="diagram__signal diagram__signal--2">
+        <circle r="3.5" fill="#ffb36b" className="diagram__signal diagram__signal--2">
           <animateMotion dur="2.6s" begin="0.9s" repeatCount="indefinite" path="M230 256 L230 300" />
         </circle>
         <circle r="2.5" fill="#8fbf8a" className="diagram__signal diagram__signal--3">

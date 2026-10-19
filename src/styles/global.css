@@ -3,22 +3,23 @@
    ============================================================ */
 :root {
   /* Surfaces */
-  --bg: #0c0b0a;
-  --bg-soft: #121110;
-  --surface: #171513;
-  --surface-raised: #1d1b18;
-  --surface-hover: #232019;
+  --bg: #0b0a09;
+  --bg-soft: #11100e;
+  --surface: #151310;
+  --surface-raised: #1b1814;
+  --surface-hover: #221e17;
 
   /* Text */
-  --text: #f2efe9;
-  --text-secondary: #a8a198;
-  --text-muted: #8a857d;
+  --text: #f5f0e8;
+  --text-secondary: #b8b0a5;
+  --text-muted: #898176;
 
   /* Accent — ember amber */
-  --accent: #f0a24b;
-  --accent-strong: #ffb964;
-  --accent-dim: rgba(240, 162, 75, 0.14);
-  --accent-line: rgba(240, 162, 75, 0.4);
+  --accent: #ff9b45;
+  --accent-strong: #ffb36b;
+  --accent-dim: rgba(255, 155, 69, 0.14);
+  --accent-line: rgba(255, 155, 69, 0.38);
+  --border-warm: rgba(255, 155, 69, 0.2);
 
   /* Status */
   --live: #8fbf8a;
@@ -27,10 +28,11 @@
   --danger-dim: rgba(231, 141, 120, 0.13);
 
   /* Lines & layers */
-  --border: rgba(242, 239, 233, 0.09);
-  --border-strong: rgba(242, 239, 233, 0.18);
+  --border: rgba(255, 255, 255, 0.09);
+  --border-strong: rgba(255, 255, 255, 0.17);
   --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.4);
   --shadow-2: 0 18px 50px -20px rgba(0, 0, 0, 0.75);
+  --glow-accent: 0 16px 44px -20px rgba(255, 155, 69, 0.5);
   --ring: 0 0 0 2px var(--bg), 0 0 0 4px var(--accent);
 
   /* Type */
@@ -113,6 +115,32 @@ body::before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
+/* atmospheric "ember light" layer — soft warm glows + edge vignette,
+   sits above the flat background color, below all content */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(
+      1100px 640px at 78% -6%,
+      rgba(255, 155, 69, 0.065),
+      transparent 62%
+    ),
+    radial-gradient(
+      900px 700px at 6% 12%,
+      rgba(255, 155, 69, 0.045),
+      transparent 58%
+    ),
+    radial-gradient(
+      120% 90% at 50% 50%,
+      transparent 58%,
+      rgba(0, 0, 0, 0.5)
+    );
+}
+
 img,
 svg {
   display: block;
@@ -130,6 +158,14 @@ h4 {
   text-wrap: balance;
 }
 
+/* selective warm emphasis inside headings — orange stays the signature */
+h1 em,
+h2 em,
+h3 em {
+  font-style: italic;
+  color: var(--accent-strong);
+}
+
 p {
   text-wrap: pretty;
 }
@@ -138,10 +174,14 @@ a {
   color: inherit;
   text-decoration-color: var(--accent-line);
   text-underline-offset: 3px;
+  transition:
+    color var(--dur-fast) var(--ease-out),
+    text-decoration-color var(--dur-fast) var(--ease-out);
 }
 
 a:hover {
   color: var(--accent-strong);
+  text-decoration-color: var(--accent-strong);
 }
 
 :focus-visible {
@@ -254,22 +294,44 @@ section[id] {
   transition:
     transform var(--dur-fast) var(--ease-out),
     background var(--dur-fast) var(--ease-out),
+    border-color var(--dur-fast) var(--ease-out),
     box-shadow var(--dur-fast) var(--ease-out);
+}
+
+.btn svg {
+  transition: transform var(--dur-fast) var(--ease-out);
 }
 
 .btn:hover {
   color: var(--btn-fg);
   background: var(--accent-strong);
   transform: translateY(-2px);
-  box-shadow: 0 10px 26px -12px rgba(240, 162, 75, 0.55);
+  box-shadow: var(--glow-accent);
+}
+
+.btn:hover svg {
+  transform: translateX(3px);
+}
+
+/* down-pointing arrows nudge downward instead of sideways */
+.btn:hover svg.lucide-arrow-down {
+  transform: translateY(2px);
 }
 
 .btn:active {
-  transform: translateY(0);
+  transform: translateY(0) scale(0.985);
+}
+
+.btn:disabled,
+.btn[aria-disabled="true"] {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
 }
 
 .btn--ghost {
-  --btn-bg: transparent;
+  --btn-bg: rgba(255, 255, 255, 0.02);
   --btn-fg: var(--text);
   border-color: var(--border-strong);
 }
@@ -277,7 +339,8 @@ section[id] {
 .btn--ghost:hover {
   --btn-bg: var(--surface-raised);
   --btn-fg: var(--text);
-  box-shadow: none;
+  border-color: var(--border-warm);
+  box-shadow: 0 12px 30px -20px rgba(255, 155, 69, 0.55);
 }
 
 .cta-row {
@@ -336,20 +399,130 @@ section[id] {
 
 /* ============================================================
    Reveal animation (IntersectionObserver driven)
+   Content is only hidden once the observer is actually active
+   (html/root carries [data-reveal]), so a failed animation
+   init can never leave the page invisible.
    ============================================================ */
 .reveal {
-  opacity: 0;
-  transform: translateY(26px);
   transition:
     opacity var(--dur-slow) var(--ease-out),
     transform var(--dur-slow) var(--ease-out);
   transition-delay: var(--reveal-delay, 0ms);
+}
+
+[data-reveal] .reveal {
+  opacity: 0;
+  transform: translateY(20px);
   will-change: opacity, transform;
 }
 
-.reveal.is-visible {
+[data-reveal] .reveal.is-visible {
   opacity: 1;
   transform: none;
+  will-change: auto;
+}
+
+/* ============================================================
+   Ember border — slow gradient sweep reserved for two
+   high-priority cards: featured project + primary contact card
+   ============================================================ */
+@supports ((mask-composite: exclude) or (-webkit-mask-composite: xor)) {
+  .pcard--large::after,
+  .contact__card--primary::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(
+      120deg,
+      rgba(255, 155, 69, 0) 18%,
+      rgba(255, 155, 69, 0.65) 45%,
+      rgba(255, 255, 255, 0.3) 55%,
+      rgba(255, 155, 69, 0) 82%
+    );
+    background-size: 280% 100%;
+    background-position: 0% 50%;
+    -webkit-mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    opacity: 0.75;
+    pointer-events: none;
+    animation: ember-border 9s linear infinite;
+  }
+}
+
+@keyframes ember-border {
+  to {
+    background-position: 280% 50%;
+  }
+}
+
+/* ============================================================
+   Section surfaces — faint alternating tint for separation.
+   Soft-edged so boundaries never show a seam.
+   ============================================================ */
+main > section:nth-of-type(even) {
+  background: linear-gradient(
+    180deg,
+    transparent,
+    rgba(255, 255, 255, 0.016) 16%,
+    rgba(255, 255, 255, 0.016) 84%,
+    transparent
+  );
+}
+
+/* ============================================================
+   Responsive & touch behaviour
+   ============================================================ */
+@media (max-width: 640px) {
+  body::after {
+    background:
+      radial-gradient(
+        720px 420px at 82% -4%,
+        rgba(255, 155, 69, 0.05),
+        transparent 62%
+      ),
+      radial-gradient(120% 90% at 50% 50%, transparent 62%, rgba(0, 0, 0, 0.42));
+  }
+}
+
+/* Touch devices: no sticky hover lift, keep colour/border feedback */
+@media (hover: none) {
+  .pcard:hover,
+  .dcard:hover,
+  .skills__group:hover,
+  .svc-card:hover,
+  .contact__card:hover {
+    transform: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pcard--large::after,
+  .contact__card--primary::after {
+    animation: none !important;
+    background: linear-gradient(
+      120deg,
+      rgba(255, 155, 69, 0.3),
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 155, 69, 0.3)
+    ) !important;
+    background-size: 100% 100% !important;
+  }
+
+  /* instant state changes only — no jumpy lifts */
+  .pcard:hover,
+  .dcard:hover,
+  .skills__group:hover,
+  .contact__card:hover {
+    transform: none !important;
+  }
 }
 
 /* ============================================================
@@ -371,5 +544,11 @@ section[id] {
   .reveal {
     opacity: 1;
     transform: none;
+  }
+
+  [data-reveal] .reveal {
+    opacity: 1;
+    transform: none;
+    will-change: auto;
   }
 }

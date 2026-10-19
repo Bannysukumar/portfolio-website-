@@ -14,8 +14,26 @@
   height: 60vw;
   max-width: 820px;
   max-height: 820px;
-  background: radial-gradient(circle, rgba(240, 162, 75, 0.09), transparent 62%);
+  background: radial-gradient(circle, rgba(255, 155, 69, 0.11), transparent 62%);
   pointer-events: none;
+  animation: hero-glow 14s var(--ease-in-out) infinite alternate;
+}
+
+@keyframes hero-glow {
+  from {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__glow {
+    animation: none;
+  }
 }
 
 .hero__inner {
@@ -90,6 +108,24 @@
 .hero__accent {
   font-style: italic;
   color: var(--accent);
+  background: linear-gradient(
+    105deg,
+    var(--accent-strong),
+    var(--accent) 55%,
+    #ff8f33
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* safety: never let gradient-clipped text render invisible */
+@supports not ((-webkit-background-clip: text) or (background-clip: text)) {
+  .hero__accent {
+    color: var(--accent-strong);
+    background: none;
+    -webkit-text-fill-color: currentColor;
+  }
 }
 
 .hero__summary {
@@ -133,6 +169,20 @@
 
 .hero__diagram {
   position: relative;
+}
+
+/* slow ambient ember light behind the visual panel */
+.hero__diagram::before {
+  content: "";
+  position: absolute;
+  inset: -8% -6%;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(
+    closest-side,
+    rgba(255, 155, 69, 0.1),
+    transparent 72%
+  );
 }
 
 .hero__diagram-link {
@@ -180,5 +230,22 @@
 @media (max-width: 520px) {
   .hero__meta {
     gap: 1.2rem 2rem;
+  }
+}
+
+/* mobile: dial the ambient light back, keep borders/shadows inside the viewport */
+@media (max-width: 640px) {
+  .hero__glow {
+    animation: none;
+    opacity: 0.75;
+    background: radial-gradient(circle, rgba(255, 155, 69, 0.08), transparent 62%);
+  }
+
+  .hero__diagram::before {
+    background: radial-gradient(
+      closest-side,
+      rgba(255, 155, 69, 0.07),
+      transparent 72%
+    );
   }
 }

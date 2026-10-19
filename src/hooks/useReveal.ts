@@ -31,6 +31,11 @@ export function useReveal(rootRef: React.RefObject<HTMLElement | null>, routeKey
     );
 
     targets.forEach((el) => observer.observe(el));
+
+    // Only hide reveal targets after the observer is live, so content stays
+    // visible if this effect never runs (JS error, old browser, SSR only).
+    root.setAttribute("data-reveal", "");
+
     return () => observer.disconnect();
   }, [rootRef, routeKey]);
 }

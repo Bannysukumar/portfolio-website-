@@ -50,6 +50,18 @@
   color: var(--text-muted);
 }
 
+.inq input:focus,
+.inq select:focus,
+.inq textarea:focus {
+  border-color: var(--accent-line);
+}
+
+.inq input:hover,
+.inq select:hover,
+.inq textarea:hover {
+  border-color: rgba(255, 255, 255, 0.24);
+}
+
 .inq textarea {
   resize: vertical;
   min-height: 7.5rem;

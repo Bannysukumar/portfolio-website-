@@ -163,6 +163,7 @@
 
 /* ---------------- Repository card ---------------- */
 .dcard {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 0.55rem;
@@ -172,6 +173,8 @@
   background: var(--bg);
   transition:
     border-color var(--dur-fast) var(--ease-out),
+    box-shadow var(--dur-fast) var(--ease-out),
+    transform var(--dur-fast) var(--ease-out),
     background var(--dur-fast) var(--ease-out);
 }
 
@@ -179,6 +182,8 @@
 .dcard:focus-within {
   border-color: var(--accent-line);
   background: var(--surface);
+  box-shadow: 0 16px 36px -26px rgba(255, 155, 69, 0.45);
+  transform: translateY(-4px);
 }
 
 .dcard__top {

@@ -25,12 +25,16 @@
   background: var(--bg-soft);
   transition:
     border-color var(--dur-mid) var(--ease-out),
+    box-shadow var(--dur-mid) var(--ease-out),
+    transform var(--dur-mid) var(--ease-out),
     background var(--dur-mid) var(--ease-out);
 }
 
 .skills__group:hover {
-  border-color: var(--accent-line);
+  border-color: var(--border-warm);
   background: var(--surface);
+  box-shadow: 0 20px 44px -30px rgba(255, 155, 69, 0.4);
+  transform: translateY(-3px);
 }
 
 .skills__group-title {

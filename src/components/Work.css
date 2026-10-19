@@ -34,6 +34,7 @@
 
 /* ---------------- Project card ---------------- */
 .pcard {
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -43,6 +44,7 @@
   overflow: hidden;
   transition:
     border-color var(--dur-mid) var(--ease-out),
+    box-shadow var(--dur-mid) var(--ease-out),
     transform var(--dur-mid) var(--ease-out),
     background var(--dur-mid) var(--ease-out);
 }
@@ -51,6 +53,7 @@
 .pcard:focus-within {
   border-color: var(--accent-line);
   background: var(--surface);
+  box-shadow: 0 22px 48px -28px rgba(255, 155, 69, 0.4);
   transform: translateY(-4px);
 }
 
