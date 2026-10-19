@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="Illustration: call flow through a PBX with a voice waveform">
+  <defs>
+    <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0v40" fill="none" stroke="#f2efe9" stroke-opacity="0.04"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="750" fill="#14120f"/>
+  <rect width="1200" height="750" fill="url(#g)"/>
+  <g stroke="#f0a24b" fill="none" stroke-width="2.5">
+    <circle cx="220" cy="300" r="52"/>
+    <path d="M198 276c8 26 22 40 48 48l16-20-24-16-10 10c-10-6-18-14-24-24l10-10-16-24z" fill="#f0a24b" stroke="none"/>
+    <path d="M300 300h180" stroke-dasharray="7 9" stroke-opacity="0.6"/>
+    <rect x="500" y="220" width="200" height="160" rx="14"/>
+    <path d="M780 300h180" stroke-dasharray="7 9" stroke-opacity="0.6"/>
+    <rect x="960" y="220" width="90" height="160" rx="14"/>
+  </g>
+  <text x="546" y="292" font-family="IBM Plex Mono, monospace" font-size="22" fill="#f0a24b">Asterisk</text>
+  <text x="556" y="322" font-family="IBM Plex Mono, monospace" font-size="19" fill="#a8a198">IVR · record</text>
+  <g stroke="#f0a24b" stroke-width="3" stroke-linecap="round" opacity="0.85">
+    <path d="M975 300v-30M995 300v-52M1015 300v-20M1035 300v-44"/>
+  </g>
+  <g fill="#a8a198" font-family="IBM Plex Mono, monospace" font-size="18">
+    <text x="168" y="392">SIP number</text>
+    <text x="944" y="416">transcribe</text>
+  </g>
+  <text x="150" y="590" font-family="Fraunces, Georgia, serif" font-size="50" fill="#f2efe9">Numbers, IVR, recordings and</text>
+  <text x="150" y="650" font-family="Fraunces, Georgia, serif" font-size="50" fill="#f0a24b">speech-to-text — self-hosted.</text>
+</svg>

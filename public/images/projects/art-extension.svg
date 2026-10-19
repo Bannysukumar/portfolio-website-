@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="Illustration: an inspector panel reviewing an extension manifest">
+  <defs>
+    <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0v40" fill="none" stroke="#f2efe9" stroke-opacity="0.04"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="750" fill="#14120f"/>
+  <rect width="1200" height="750" fill="url(#g)"/>
+  <rect x="150" y="140" width="900" height="440" rx="16" fill="#1b1916" stroke="#f0a24b" stroke-opacity="0.5" stroke-width="2"/>
+  <line x1="150" y1="196" x2="1050" y2="196" stroke="#f0a24b" stroke-opacity="0.4" stroke-width="2"/>
+  <circle cx="182" cy="168" r="7" fill="#f0a24b" opacity="0.9"/>
+  <circle cx="208" cy="168" r="7" fill="#f0a24b" opacity="0.5"/>
+  <circle cx="234" cy="168" r="7" fill="#f0a24b" opacity="0.25"/>
+  <text x="270" y="176" font-family="IBM Plex Mono, monospace" font-size="19" fill="#a8a198">extension-security-inspector</text>
+  <g font-family="IBM Plex Mono, monospace" font-size="21">
+    <text x="190" y="252" fill="#f2efe9">manifest.json<tspan fill="#a8a198">  ·  parsed</tspan></text>
+    <text x="190" y="300" fill="#f2efe9">capabilities<tspan fill="#f0a24b">  ·  12 declared</tspan></text>
+    <text x="190" y="348" fill="#f2efe9">contributions<tspan fill="#a8a198">  ·  8 surfaces</tspan></text>
+    <text x="190" y="396" fill="#f2efe9">dependencies<tspan fill="#a8a198">  ·  3 direct</tspan></text>
+    <text x="190" y="444" fill="#f2efe9">findings<tspan fill="#f0a24b">  ·  4 to review</tspan></text>
+  </g>
+  <g stroke="#f0a24b" stroke-width="2.5" fill="none">
+    <path d="M860 300l24 24 44-52"/>
+    <circle cx="890" cy="420" r="30"/>
+    <path d="M890 404v20M890 438v2"/>
+  </g>
+  <text x="150" y="660" font-family="Fraunces, Georgia, serif" font-size="50" fill="#f2efe9">Audit what you install.</text>
+</svg>

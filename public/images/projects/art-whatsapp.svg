@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="Illustration: broadcast arcs radiating from a message hub">
+  <defs>
+    <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0v40" fill="none" stroke="#f2efe9" stroke-opacity="0.04"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="750" fill="#14120f"/>
+  <rect width="1200" height="750" fill="url(#g)"/>
+  <g fill="none" stroke="#f0a24b" stroke-width="2">
+    <circle cx="600" cy="380" r="60" fill="#1b1916"/>
+    <path d="M575 366h50v34h-28l-14 14v-14h-8z" fill="#f0a24b" stroke="none"/>
+    <path d="M700 380a100 100 0 0 1-40 80" stroke-opacity="0.75"/>
+    <path d="M740 380a140 140 0 0 1-56 112" stroke-opacity="0.5"/>
+    <path d="M780 380a180 180 0 0 1-72 144" stroke-opacity="0.28"/>
+    <path d="M500 380a100 100 0 0 0 40 80" stroke-opacity="0.75"/>
+    <path d="M460 380a140 140 0 0 0 56 112" stroke-opacity="0.5"/>
+    <path d="M420 380a180 180 0 0 0 72 144" stroke-opacity="0.28"/>
+  </g>
+  <g font-family="IBM Plex Mono, monospace" font-size="19" fill="#a8a198">
+    <text x="150" y="180">bulk campaigns</text>
+    <text x="150" y="212">templates · polls · lists</text>
+    <text x="880" y="180">chatbot + autoresponder</text>
+    <text x="880" y="212">contacts · history</text>
+    <text x="150" y="620">plans · payments</text>
+    <text x="880" y="620">web push campaigns</text>
+  </g>
+  <text x="382" y="694" font-family="Fraunces, Georgia, serif" font-size="52" fill="#f2efe9">One hub, thousands of conversations.</text>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="Illustration: a city grid heat map with a prediction curve">
+  <defs>
+    <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0v40" fill="none" stroke="#f2efe9" stroke-opacity="0.04"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="750" fill="#14120f"/>
+  <rect width="1200" height="750" fill="url(#g)"/>
+  <g stroke="#f2efe9" stroke-opacity="0.14">
+    <path d="M180 160v320M300 160v320M420 160v320M540 160v320M660 160v320M780 160v320M900 160v320"/>
+    <path d="M180 160h780M180 240h780M180 320h780M180 400h780M180 480h780"/>
+  </g>
+  <g fill="#f0a24b">
+    <rect x="180" y="240" width="120" height="80" opacity="0.12"/>
+    <rect x="420" y="320" width="120" height="80" opacity="0.3"/>
+    <rect x="540" y="320" width="120" height="80" opacity="0.55"/>
+    <rect x="660" y="240" width="120" height="80" opacity="0.75"/>
+    <rect x="780" y="160" width="120" height="80" opacity="0.9"/>
+    <rect x="300" y="400" width="120" height="80" opacity="0.2"/>
+    <rect x="660" y="400" width="120" height="80" opacity="0.4"/>
+  </g>
+  <path d="M180 440 C 340 420, 420 340, 540 330 S 780 240, 960 190" fill="none" stroke="#f2efe9" stroke-width="3" stroke-dasharray="8 8"/>
+  <circle cx="780" cy="205" r="9" fill="#f0a24b"/>
+  <text x="180" y="600" font-family="IBM Plex Mono, monospace" font-size="20" fill="#a8a198">bengaluru mobility data · demand prediction</text>
+  <text x="180" y="672" font-family="Fraunces, Georgia, serif" font-size="52" fill="#f2efe9">Forecasting the city's traffic.</text>
+</svg>

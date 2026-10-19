@@ -1,0 +1,375 @@
+{
+  "Telugu-Earning-Hub": {
+    "display": "Telugu Earning Hub",
+    "tech": "pnpm monorepo · React 19 · Node API · Firebase",
+    "liveUrl": "https://teluguearninghub.live",
+    "liveStatus": "verified-live"
+  },
+  "investment-plan-telugu-earning-hub": {
+    "display": "Investment Plan (Telugu Earning Hub)",
+    "tech": "React · Vite · Node"
+  },
+  "binary-mlm-plan": {
+    "display": "Binary MLM Platform",
+    "tech": "Next.js 14 · Firebase · TypeScript",
+    "liveUrl": "https://binary-mlm-plan-frontend.vercel.app"
+  },
+  "single-mlm-website": {
+    "display": "Single-Leg MLM Website",
+    "tech": "React · Firebase",
+    "liveUrl": "https://single-mlm-website.vercel.app"
+  },
+  "malaysiantradenets.com-mlm-website": {
+    "display": "Malaysian Trade Nets",
+    "tech": "React · Firebase · white-label admin CMS",
+    "note": "Domain TLS certificate expired (checked 19 Oct 2026) — no live link offered"
+  },
+  "rich-pay-mlm-website": {
+    "display": "Rich Pay",
+    "tech": "React · Tailwind · Firebase",
+    "liveUrl": "https://richpay.live",
+    "liveStatus": "responds-but-unrendered"
+  },
+  "mlm-web": {
+    "display": "MLM Web",
+    "tech": "HTML · Firebase",
+    "liveUrl": "https://mlm-web-two.vercel.app"
+  },
+  "trustnft.live": {
+    "display": "TrustNFT Live",
+    "tech": "HTML · Firebase",
+    "liveUrl": "https://trustnft-live.vercel.app"
+  },
+  "BlueX": {
+    "display": "BlueX",
+    "tech": "Android · Java (admin panel, KYC, withdrawals)"
+  },
+  "bluexcrypto.live--2-": {
+    "display": "BluEx platform",
+    "tech": "JavaScript · DeFi staking UI"
+  },
+  "bxc.network": {
+    "display": "BXC Network",
+    "tech": "JavaScript",
+    "note": "Recorded deployment returned 404 on 19 Oct 2026 — source only"
+  },
+  "Crypto-Exchange": {
+    "display": "Crypto Exchange (INR ↔ crypto)",
+    "tech": "React · Vite · Cashfree · Firebase · web3",
+    "liveUrl": "https://crypto-exchange-ecru-chi.vercel.app"
+  },
+  "crypto-pay": {
+    "display": "Crypto Pay",
+    "tech": "Solidity · JavaScript (wallet contracts)"
+  },
+  "staking-website": {
+    "display": "Staking Website",
+    "tech": "JavaScript · Solidity (Lock.sol)",
+    "note": "Recorded deployment returned 404 on 19 Oct 2026 — source only"
+  },
+  "pin-staking-website": {
+    "display": "Pin Staking Website",
+    "tech": "JavaScript · DeFi staking",
+    "note": "Recorded deployment returned 404 on 19 Oct 2026 — source only"
+  },
+  "decentralized-staking": {
+    "display": "Decentralized Staking (BXC)",
+    "tech": "HTML · Solidity",
+    "liveUrl": "https://decentralized-staking-bay.vercel.app"
+  },
+  "decentralized-staking-for-pranavam": {
+    "display": "Staking DApp for Pranavam",
+    "tech": "JavaScript · BSC testnet",
+    "liveUrl": "https://pranavamai.vercel.app"
+  },
+  "Decentralized-staking-DApp": {
+    "display": "Simple Staking DApp",
+    "tech": "Solidity · JavaScript"
+  },
+  "Decentralized-Sip": {
+    "display": "Decentralized SIP",
+    "tech": "TypeScript · USDT/BXC on BNB Chain"
+  },
+  "Decentralized-Insurance-Platform": {
+    "display": "Decentralized Insurance Platform",
+    "tech": "Solidity · JavaScript",
+    "liveUrl": "https://decentralized-insurance-platform.vercel.app"
+  },
+  "Decentralized-swaping-with-refferal": {
+    "display": "Decentralized Swap with Referral",
+    "tech": "HTML · Solidity · BNB Chain",
+    "liveUrl": "https://decentralized-swaping-with-refferal.vercel.app"
+  },
+  "decentralized-exchange": {
+    "display": "MYT/USDT Exchange",
+    "tech": "Solidity · JavaScript",
+    "note": "Recorded deployment returned 404 on 19 Oct 2026 — source only"
+  },
+  "open-sea-clone": {
+    "display": "NFT Marketplace (OpenSea clone)",
+    "tech": "Solidity · Hardhat · OpenZeppelin",
+    "note": "Recorded deployment returned 404 on 19 Oct 2026 — source only"
+  },
+  "Decentralized-Nft-Market-Place": {
+    "display": "Decentralized NFT Market Place",
+    "tech": "Solidity · JavaScript"
+  },
+  "Decentralized-Nft": {
+    "display": "NFT Minting DApp",
+    "tech": "Solidity · JavaScript"
+  },
+  "Nft-Metaweb3": {
+    "display": "NFT MetaWeb3",
+    "tech": "ethers.js · ERC-721"
+  },
+  "simple-storage-dapp": {
+    "display": "Simple Storage DApp",
+    "tech": "Web3.js · MetaMask"
+  },
+  "lucky-draw": {
+    "display": "Lucky Draw (Chainlink VRF)",
+    "tech": "Solidity · Chainlink VRF · BNB Chain"
+  },
+  "IIT-KANPUR-ASSEMENT1": {
+    "display": "Pharma Supply Chain DApp",
+    "tech": "Solidity · JavaScript"
+  },
+  "solidity-home-works-and-assements": {
+    "display": "Solidity coursework collection",
+    "tech": "Solidity (ERC20, upgradeable contracts, EIP-712)"
+  },
+  "Smart-News": {
+    "display": "Smart News (Android)",
+    "tech": "Android · Java · Firebase"
+  },
+  "TrueBond": {
+    "display": "TrueBond (Android)",
+    "tech": "Android · Java"
+  },
+  "manavoori-muchhatlu-app": {
+    "display": "Manavoori Muchhatlu (Android)",
+    "tech": "Android · Java · Firebase"
+  },
+  "freetesters": {
+    "display": "FreeTesters (Android)",
+    "tech": "Android · Java"
+  },
+  "PMTv": {
+    "display": "PMTv / PMATv (Android Live TV)",
+    "tech": "Android · Java · admin panel"
+  },
+  "Typing-Master": {
+    "display": "Typing Master (Android)",
+    "tech": "Android · Java"
+  },
+  "Typing-Master-app-website": {
+    "display": "Typing Master Website",
+    "tech": "JavaScript",
+    "liveUrl": "https://typing-master-taupe.vercel.app"
+  },
+  "bot": {
+    "display": "Telegram GEN Bot",
+    "tech": "Telegraf · Express · Firebase"
+  },
+  "instagram-whatsapp-paid-group": {
+    "display": "Instagram/WhatsApp Paid Group",
+    "tech": "JavaScript"
+  },
+  "Project": {
+    "display": "SlA Dashboard",
+    "tech": "Next.js · dashboard",
+    "liveUrl": "https://project-seven-ashy-32.vercel.app"
+  },
+  "My-World-website": {
+    "display": "My World Website",
+    "tech": "React",
+    "liveUrl": "https://my-world-website.vercel.app"
+  },
+  "dating-website": {
+    "display": "Aura Chat (anonymous video chat)",
+    "tech": "TypeScript",
+    "liveUrl": "https://aura-chat-gray.vercel.app"
+  },
+  "Trivexa-website": {
+    "display": "Trivexa Technologies Site",
+    "tech": "TypeScript",
+    "liveUrl": "https://trivexa-five.vercel.app"
+  },
+  "thanvish.com": {
+    "display": "Thanvish Travels",
+    "tech": "HTML · travel booking",
+    "note": "Domain thanvish.travel currently serves a parking/lander redirect — no live link offered"
+  },
+  "thanvish-travels": {
+    "display": "Thanvish Travels (React)",
+    "tech": "React · CSS"
+  },
+  "travaling-website": {
+    "display": "Travaling Website",
+    "tech": "HTML",
+    "liveUrl": "https://travaling-website.vercel.app"
+  },
+  "Terms-Website": {
+    "display": "Terms — Ecological Restoration",
+    "tech": "TypeScript",
+    "liveUrl": "https://terms-website.vercel.app"
+  },
+  "Akits-website": {
+    "display": "AKITS College Website",
+    "tech": "HTML",
+    "note": "Recorded deployment returned 404 on 19 Oct 2026 — source only"
+  },
+  "-CLAT-2K26-Fest": {
+    "display": "ÉCLAT 2K26 Fest",
+    "tech": "TypeScript",
+    "liveUrl": "https://eclat-2k26.vercel.app"
+  },
+  "Zivo-Academy-website": {
+    "display": "Zivo Academy",
+    "tech": "Next.js · courses, cart, checkout"
+  },
+  "Click-craze-affiliated-website": {
+    "display": "Click Craze Affiliate Site",
+    "tech": "Next.js · blog & deals",
+    "liveUrl": "https://click-craze-one.vercel.app"
+  },
+  "Web3-Agency-Website": {
+    "display": "Web3 Agency Site",
+    "tech": "HTML"
+  },
+  "web3today": {
+    "display": "QuickContracts (web3today)",
+    "tech": "Next.js · Tailwind",
+    "note": "Recorded deployment returned 404 on 19 Oct 2026 — source only"
+  },
+  "students-can-get-mentors": {
+    "display": "Students & Mentors Platform",
+    "tech": "HTML"
+  },
+  "spa-website": {
+    "display": "N Wellness SPA Site",
+    "tech": "HTML",
+    "liveUrl": "https://spa-website-two.vercel.app"
+  },
+  "1.-Cross-Platform-AI-Orchestration-Hub--AI-Blend-": {
+    "display": "AI Blend — AI Orchestration Hub",
+    "tech": "HTML · JavaScript",
+    "liveUrl": "https://1-cross-platform-ai-orchestration-h.vercel.app"
+  },
+  "Dotnet-Learning": {
+    "display": ".NET 8 Learning Exercises",
+    "tech": "C# · .NET 8"
+  },
+  "42-sms": {
+    "display": "42 SMS Sender",
+    "tech": "Java · FortyTwo API"
+  },
+  "jntuh-results-app": {
+    "display": "JNTUH Results (Android shell)",
+    "tech": "Capacitor · Android"
+  },
+  "portfolio-website": {
+    "display": "This portfolio",
+    "tech": "React · Vite · TypeScript · GSAP",
+    "liveUrl": "https://adepu-sukumar.vercel.app"
+  },
+  "jntuh-results-website": {
+    "liveUrl": "https://manajntuhresults.vercel.app/",
+    "liveStatus": "verified-live",
+    "note": "HTTP 200 and full page render verified 19 Oct 2026."
+  },
+  "Devbrain-ai-frentend": {
+    "liveUrl": "https://devbrain-ai-frentend.vercel.app",
+    "liveStatus": "verified-live",
+    "note": "HTTP 200 and full page render verified 19 Oct 2026."
+  },
+  "whatsapp-Bulk-messenger": {
+    "liveUrl": "https://whatsapp-bulk-messenger-two.vercel.app",
+    "liveStatus": "responds-but-unrendered",
+    "note": "HTTP 200 confirmed 19 Oct 2026; the interactive UI could not be rendered for a screenshot, so an illustrative artwork is used instead."
+  },
+  "Intellectual-Property": {
+    "liveUrl": "https://intellectual-property-one.vercel.app",
+    "liveStatus": "verified-live",
+    "note": "HTTP 200 and page render verified 19 Oct 2026 (title: IP Registry dApp)."
+  },
+  "MedMitra": {
+    "liveUrl": "https://med-mitra-chi.vercel.app",
+    "liveStatus": "verified-live",
+    "note": "HTTP 200 and page render verified 19 Oct 2026."
+  },
+  "PelliMandapam-website": {
+    "liveUrl": "https://pelli-mandapam.vercel.app",
+    "liveStatus": "verified-live",
+    "note": "HTTP 200 and page render verified 19 Oct 2026."
+  },
+  "SoundSpot-Website": {
+    "liveUrl": "https://sound-spot-rust.vercel.app",
+    "liveStatus": "verified-live",
+    "note": "HTTP 200 and page render verified 19 Oct 2026."
+  },
+  "Mana-Code-Play-ground": {
+    "liveUrl": "https://mana-code-playground.vercel.app",
+    "liveStatus": "verified-live",
+    "note": "HTTP 200 and page render verified 19 Oct 2026."
+  },
+  "malla-reddy-women-s-engineering-results-website": {
+    "liveUrl": "https://malla-reddy-women-s-engineering-res.vercel.app",
+    "liveStatus": "verified-live",
+    "note": "HTTP 200 and page render verified 19 Oct 2026."
+  },
+  "kait.org": {
+    "liveUrl": "https://kait-org.vercel.app",
+    "liveStatus": "verified-live",
+    "note": "HTTP 200 confirmed 19 Oct 2026."
+  },
+  "assets": {
+    "display": "Crypto Token Reference"
+  },
+  "Bannysukumar": {
+    "display": "Profile README"
+  },
+  "Blockchain-Solidity": {
+    "display": "Blockchain Solidity Coursework"
+  },
+  "bxc-mining-app": {
+    "display": "BXC Mining App"
+  },
+  "mytree-website": {
+    "display": "Mytree Ecosystem Website",
+    "liveUrl": "https://mytree.info",
+    "liveStatus": "verified-live"
+  },
+  "pin-token": {
+    "display": "Pin Token"
+  },
+  "PMATv": {
+    "display": "PMATv (second copy of PMTv)"
+  },
+  "portfolio-security-service": {
+    "display": "Singha Security Services Site",
+    "liveUrl": "https://portfolio-security-service.vercel.app",
+    "liveStatus": "responds-but-unrendered"
+  },
+  "Pratice": {
+    "display": "Java Practice Notes"
+  },
+  "product": {
+    "display": "Shopping Community Site"
+  },
+  "product-2": {
+    "display": "Product 2"
+  },
+  "sample": {
+    "display": "Sample"
+  },
+  "trustnft": {
+    "display": "TrustNFT DApp"
+  },
+  "Web3Todaywebsite": {
+    "display": "Web3Today & Publications Clients"
+  },
+  "jntuk-website": {
+    "note": "Recorded deployment returned 404 on 19 Oct 2026 — source only"
+  }
+}

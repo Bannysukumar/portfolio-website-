@@ -1,0 +1,45 @@
+# Adepu Sukumar — portfolio
+# Every public page is intended to be indexable. Nothing here is blocked.
+#
+# If you ever want to opt out of crawlers that train models (but keep search
+# crawlers), change the GPTBot / ClaudeBot / Google-Extended rules below to
+# "Disallow: /". Search crawlers (Googlebot, Bingbot, OAI-SearchBot,
+# PerplexityBot, Applebot) should stay allowed so the site remains findable.
+
+User-agent: *
+Allow: /
+
+# Traditional search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# AI search crawlers (used to answer search queries with citations)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+# AI training crawlers — allowed for now, see note above to opt out
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://adepu-sukumar.vercel.app/sitemap.xml

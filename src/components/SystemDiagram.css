@@ -1,0 +1,66 @@
+.diagram {
+  margin: 0;
+  position: relative;
+  padding: clamp(1rem, 2.5vw, 1.75rem);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-l);
+  background:
+    radial-gradient(120% 90% at 80% 0%, rgba(240, 162, 75, 0.07), transparent 55%),
+    var(--bg-soft);
+}
+
+.diagram__svg {
+  width: 100%;
+  height: auto;
+}
+
+.diagram__node rect {
+  fill: var(--surface);
+  stroke: var(--border-strong);
+  stroke-width: 1;
+}
+
+.diagram__node--data rect {
+  stroke: var(--accent-line);
+}
+
+.diagram__label {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
+  fill: var(--text);
+  letter-spacing: 0.04em;
+}
+
+.diagram__sub {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  fill: var(--text-muted);
+  letter-spacing: 0.03em;
+}
+
+.diagram__caption {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-top: 0.9rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--border);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+}
+
+.diagram__caption-label {
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+}
+
+/* Signals dim when the user prefers reduced motion (SMIL is stopped by the
+   global CSS rule for animations; this keeps the static dots invisible). */
+@media (prefers-reduced-motion: reduce) {
+  .diagram__signal {
+    display: none;
+  }
+}

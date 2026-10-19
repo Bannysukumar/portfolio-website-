@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="Illustration: a phone frame with a wallet diamond inside">
+  <defs>
+    <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0v40" fill="none" stroke="#f2efe9" stroke-opacity="0.04"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="750" fill="#14120f"/>
+  <rect width="1200" height="750" fill="url(#g)"/>
+  <rect x="490" y="110" width="220" height="450" rx="30" fill="#1b1916" stroke="#f0a24b" stroke-opacity="0.55" stroke-width="2.5"/>
+  <line x1="565" y1="140" x2="635" y2="140" stroke="#f0a24b" stroke-opacity="0.6" stroke-width="4" stroke-linecap="round"/>
+  <g stroke="#f0a24b" stroke-width="2.5" fill="none">
+    <path d="M600 250l70 46-70 46-70-46z"/>
+    <path d="M530 296l70 116 70-116" stroke-opacity="0.6"/>
+  </g>
+  <g fill="#f2efe9" opacity="0.28">
+    <rect x="520" y="430" width="160" height="12" rx="6"/>
+    <rect x="520" y="460" width="110" height="12" rx="6"/>
+  </g>
+  <g font-family="IBM Plex Mono, monospace" font-size="19" fill="#a8a198">
+    <text x="150" y="240">farming</text>
+    <text x="150" y="276">tasks</text>
+    <text x="150" y="312">game</text>
+    <text x="880" y="240">news</text>
+    <text x="880" y="276">invites</text>
+    <text x="880" y="312">TON Connect wallet</text>
+  </g>
+  <text x="330" y="672" font-family="Fraunces, Georgia, serif" font-size="52" fill="#f2efe9">A whole app inside a chat.</text>
+</svg>

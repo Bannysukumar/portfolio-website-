@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="Illustration: encrypted message exchange between two clients">
+  <defs>
+    <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0v40" fill="none" stroke="#f2efe9" stroke-opacity="0.04"/>
+    </pattern>
+    <linearGradient id="lg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f0a24b" stop-opacity="0.1"/>
+      <stop offset="0.5" stop-color="#f0a24b" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#f0a24b" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="#14120f"/>
+  <rect width="1200" height="750" fill="url(#g)"/>
+  <g stroke="#f0a24b" fill="none" stroke-width="2">
+    <rect x="130" y="250" width="240" height="170" rx="14"/>
+    <rect x="830" y="250" width="240" height="170" rx="14"/>
+    <path d="M370 300 C 520 210, 680 210, 830 300" stroke-opacity="0.55" stroke-dasharray="6 8"/>
+    <path d="M370 370 C 520 460, 680 460, 830 370" stroke-opacity="0.55" stroke-dasharray="6 8"/>
+  </g>
+  <g fill="#f0a24b">
+    <rect x="160" y="285" width="130" height="12" rx="6" opacity="0.75"/>
+    <rect x="160" y="312" width="180" height="12" rx="6" opacity="0.45"/>
+    <rect x="160" y="339" width="95" height="12" rx="6" opacity="0.6"/>
+    <rect x="860" y="285" width="150" height="12" rx="6" opacity="0.45"/>
+    <rect x="860" y="312" width="110" height="12" rx="6" opacity="0.7"/>
+    <circle cx="600" cy="375" r="46" fill="none" stroke="#f0a24b" stroke-width="2"/>
+  </g>
+  <path d="M582 368v-12a18 18 0 0 1 36 0v12m-40 0h44v30h-44z" fill="none" stroke="#f0a24b" stroke-width="2.5"/>
+  <text x="130" y="500" font-family="IBM Plex Mono, monospace" font-size="20" fill="#a8a198">client A — ciphertext only</text>
+  <text x="830" y="500" font-family="IBM Plex Mono, monospace" font-size="20" fill="#a8a198">client B — keys stay local</text>
+  <text x="130" y="620" font-family="Fraunces, Georgia, serif" font-size="52" fill="#f2efe9">The server relays.</text>
+  <text x="130" y="678" font-family="Fraunces, Georgia, serif" font-size="52" fill="#f0a24b">It never reads.</text>
+</svg>

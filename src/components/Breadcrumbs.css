@@ -1,0 +1,42 @@
+.crumbs {
+  margin-bottom: 1.4rem;
+}
+
+.crumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.crumbs li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.crumbs li + li::before {
+  content: "/";
+  color: var(--border-strong);
+}
+
+.crumbs a {
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+
+.crumbs a:hover {
+  color: var(--accent-strong);
+  text-decoration: underline;
+}
+
+.crumbs [aria-current="page"] {
+  color: var(--text);
+}
