@@ -8,6 +8,15 @@
     <meta name="author" content="Adepu Sukumar" />
 
     <!--
+      Google Search Console ownership check. Deliberately placed OUTSIDE the
+      seo:start/end block and without a data-seo attribute: the prerenderer
+      replaces only what is inside the markers, and the client-side useSeo hook
+      only removes tags it owns (data-seo), so this tag survives on every page
+      and on every in-app navigation. Do not remove it — verification lapses.
+    -->
+    <meta name="google-site-verification" content="19aqihOrD-qf3lECIogsri3a8H8WCd2piEQ7xdq2Akg" />
+
+    <!--
       Route-specific SEO tags. The block below is the homepage default used by
       the dev server; `npm run build` replaces everything between the markers
       with the correct tags for each prerendered route.

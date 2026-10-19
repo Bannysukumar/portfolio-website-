@@ -119,7 +119,7 @@ Technical SEO and content SEO are built into the site:
 
 ### Setting up Search Console & Webmaster Tools
 
-- **Google Search Console (GSC):** Create a property for `https://adepu-sukumar.vercel.app` (URL prefix or Domain). Since it's a static site, DNS verification may be easiest with Domain; or upload an HTML verification file if your host allows. Submit `https://adepu-sukumar.vercel.app/sitemap.xml` once verified. Monitor Coverage, Core Web Vitals and "Page indexing" — no verification tokens are stored in code.
+- **Google Search Console (GSC):** Create a property for `https://adepu-sukumar.vercel.app` (URL prefix or Domain). The HTML-tag verification token is in `index.html`'s static head (`<meta name="google-site-verification">`) — keep it there, it is present on every prerendered page. Submit `https://adepu-sukumar.vercel.app/sitemap.xml` once verified. Monitor Coverage, Core Web Vitals and "Page indexing".
 - **Bing Webmaster Tools:** Add the same URL and submit the sitemap (`https://adepu-sukumar.vercel.app/sitemap.xml`). Bing also surfaces via API; verification can be done via DNS/meta tag/HTML file — choose the same method as GSC to avoid duplication.
 - **AI-search indexing:** `robots.txt` already allows `OAI-SearchBot`, `PerplexityBot`, `Claude-SearchBot`, etc. No additional files (e.g. `llms.txt`) have been added unless needed; the task recommends adding only if concretely justified.
 - **Content updates:** After changing copy, rerun `npm run build` (which regenerates prerendered HTML, sitemap and writes `public/sitemap.xml`), then re-submit the sitemap in GSC/Bing.
