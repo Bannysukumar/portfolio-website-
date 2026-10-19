@@ -4,12 +4,30 @@
   background: var(--bg-soft);
 }
 
+/* Brand and social links share the first row; the sitemap links get a
+   full-width row of their own, so a wrapped group never leaves the row that
+   follows it half empty. */
 .footer__inner {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
-  justify-content: space-between;
   gap: 1.6rem 2.5rem;
+}
+
+.footer__brand {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.footer__end {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: end;
+}
+
+.footer__inner nav {
+  grid-column: 1 / -1;
+  grid-row: 2;
 }
 
 .footer__brand {
@@ -111,7 +129,17 @@
 
 @media (max-width: 720px) {
   .footer__inner {
-    flex-direction: column;
-    align-items: flex-start;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .footer__brand,
+  .footer__end,
+  .footer__inner nav {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .footer__end {
+    justify-self: start;
   }
 }

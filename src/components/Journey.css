@@ -37,6 +37,11 @@
     grid-template-columns: 130px minmax(0, 1fr);
     padding-left: 0;
   }
+
+  /* Kept in the content column so it never lands under the date. */
+  .journey__evidence {
+    grid-column: 2;
+  }
 }
 
 .journey__item::before {
@@ -66,7 +71,7 @@
 }
 
 .journey__content {
-  max-width: 62ch;
+  max-width: var(--measure);
 }
 
 .journey__title {
@@ -79,9 +84,22 @@
 }
 
 .journey__evidence {
-  margin-top: 0.7rem;
+  margin-top: 0.4rem;
   font-family: var(--font-mono);
   font-size: 0.7rem;
   letter-spacing: 0.03em;
   color: var(--text-muted);
+}
+
+/* Wide screens: the repository evidence sits in its own column at the end of
+   the row instead of leaving the right half of the entry empty. */
+@media (min-width: 1200px) {
+  .journey__item {
+    grid-template-columns: 130px minmax(0, 1fr) minmax(0, 20rem);
+  }
+
+  .journey__evidence {
+    grid-column: 3;
+    margin-top: 0.2rem;
+  }
 }

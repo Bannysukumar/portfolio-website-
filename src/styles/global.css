@@ -49,7 +49,9 @@
 
   /* Layout */
   --measure: 68ch;
-  --content: 1180px;
+  /* Desktop content width. Wide enough that cards and grids use the screen,
+     narrow enough that nothing is forced to touch the edges. */
+  --content: 1320px;
   --gutter: clamp(1.25rem, 4vw, 3rem);
   /* Vertical rhythm. A section gets more air above its heading than below its
      content, so neighbouring sections read as one continuous page instead of

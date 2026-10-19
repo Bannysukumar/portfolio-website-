@@ -1,11 +1,48 @@
-/* ---- Homepage pricing band ---- */
+/* ---- Pricing: heading and band share the row on wide screens ---- */
+.pricing__inner {
+  display: grid;
+  gap: clamp(1.6rem, 3.2vw, 2.4rem);
+  align-items: start;
+}
+
+@media (min-width: 1100px) {
+  .pricing__inner {
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    gap: clamp(2rem, 4vw, 3.5rem);
+  }
+
+  .pricing__inner .pricing__band {
+    margin-top: 0;
+  }
+}
+
+/* ---- Pricing band ---- */
 .pricing__band {
   margin-top: 1.8rem;
   padding: clamp(1.4rem, 3.2vw, 2.2rem);
   background: var(--surface);
   border: 1px solid var(--border-strong);
   border-radius: var(--radius-l);
-  max-width: 60rem;
+  display: grid;
+  gap: 1.15rem 2.4rem;
+  align-items: center;
+}
+
+/* When there is room the price and the statement sit at either end of the
+   band instead of stacking in the left half of it. */
+@media (min-width: 860px) {
+  .pricing__band {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  .pricing__band .pricing__statement {
+    margin-top: 0;
+    justify-self: end;
+  }
+}
+
+.pricing__band .cta-row {
+  grid-column: 1 / -1;
 }
 
 .pricing__band--flush {

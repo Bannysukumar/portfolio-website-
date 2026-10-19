@@ -155,20 +155,10 @@
   padding: 0;
   margin: 1.1rem 0 0;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  /* Fills whatever width is available — four columns on a wide desktop, down to
+     one on a phone — with no leftover tracks in the last row. */
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr));
   gap: clamp(0.9rem, 2vw, 1.3rem);
-}
-
-@media (max-width: 1020px) {
-  .dir__grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 640px) {
-  .dir__grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 /* ---------------- Repository card ---------------- */
@@ -203,6 +193,7 @@
   line-height: 1.3;
   flex: 1 1 auto;
   min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .dcard__name a {

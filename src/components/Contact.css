@@ -1,3 +1,8 @@
+.contact__layout {
+  display: grid;
+  gap: clamp(2rem, 4vw, 3rem);
+}
+
 .contact__title {
   max-width: 16ch;
 }
@@ -12,6 +17,25 @@
 @media (max-width: 700px) {
   .contact__grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Details and form side by side once there is room for both — the form keeps
+   the wider half, and the divider between them is no longer needed. */
+@media (min-width: 1000px) {
+  .contact__layout {
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+    align-items: start;
+  }
+
+  .contact__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact__form {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 0;
   }
 }
 

@@ -23,8 +23,8 @@ export function Journey() {
               <div className="journey__content">
                 <h3 className="journey__title">{entry.title}</h3>
                 <p className="journey__body">{entry.body}</p>
-                <p className="journey__evidence">{entry.evidence}</p>
               </div>
+              <p className="journey__evidence">{entry.evidence}</p>
             </Reveal>
           ))}
         </ol>
