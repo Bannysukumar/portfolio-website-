@@ -1,7 +1,7 @@
 /* ---- Homepage pricing band ---- */
 .pricing__band {
-  margin-top: 2.4rem;
-  padding: clamp(1.6rem, 4vw, 2.6rem);
+  margin-top: 1.8rem;
+  padding: clamp(1.4rem, 3.2vw, 2.2rem);
   background: var(--surface);
   border: 1px solid var(--border-strong);
   border-radius: var(--radius-l);

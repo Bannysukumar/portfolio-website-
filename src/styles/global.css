@@ -51,7 +51,11 @@
   --measure: 68ch;
   --content: 1180px;
   --gutter: clamp(1.25rem, 4vw, 3rem);
-  --section-pad: clamp(4.5rem, 10vw, 8.5rem);
+  /* Vertical rhythm. A section gets more air above its heading than below its
+     content, so neighbouring sections read as one continuous page instead of
+     two blocks separated by a 2x-padding void. */
+  --section-pad: clamp(2.75rem, 5.5vw, 4.5rem);
+  --section-pad-end: clamp(2.25rem, 3.75vw, 3.25rem);
 
   /* Radius */
   --radius-s: 8px;
@@ -190,7 +194,7 @@ section[id] {
 }
 
 .section {
-  padding-block: var(--section-pad);
+  padding-block: var(--section-pad) var(--section-pad-end);
   position: relative;
 }
 

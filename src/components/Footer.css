@@ -1,6 +1,6 @@
 .footer {
   border-top: 1px solid var(--border);
-  padding: clamp(2.5rem, 6vw, 4rem) 0 2.2rem;
+  padding: clamp(2rem, 4.5vw, 3rem) 0 1.8rem;
   background: var(--bg-soft);
 }
 
@@ -92,8 +92,8 @@
 }
 
 .footer__legal {
-  margin-top: 2.2rem;
-  padding-top: 1.4rem;
+  margin-top: 1.6rem;
+  padding-top: 1.1rem;
   border-top: 1px solid var(--border);
 }
 

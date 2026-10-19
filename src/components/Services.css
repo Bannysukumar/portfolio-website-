@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  margin-top: 2.6rem;
+  margin-top: 2rem;
 }
 
 @media (max-width: 1024px) {
@@ -66,12 +66,12 @@
 
 .svc-list {
   display: grid;
-  gap: 3.2rem;
-  margin-top: 2.4rem;
+  gap: 2.6rem;
+  margin-top: 2rem;
 }
 
 .svc {
-  padding-top: 2.6rem;
+  padding-top: 2rem;
   border-top: 1px solid var(--border);
   scroll-margin-top: 100px;
 }

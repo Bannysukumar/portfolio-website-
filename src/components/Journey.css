@@ -28,6 +28,10 @@
   padding: 0 0 clamp(2.2rem, 5vw, 3.4rem) 2.2rem;
 }
 
+.journey__item:last-child {
+  padding-bottom: 0;
+}
+
 @media (min-width: 780px) {
   .journey__item {
     grid-template-columns: 130px minmax(0, 1fr);
